@@ -1,6 +1,6 @@
-# Alua Tunes - Technical Task
+# Aula Tunes - Technical Task
 
-Submission of a technical task for Alua Tunes. The following is required to get started:
+Submission of a technical task for Aula Tunes. The following is required to get started:
 
 - Node 12.x
 - NPM 6.x
