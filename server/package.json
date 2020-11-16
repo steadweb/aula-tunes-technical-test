@@ -1,0 +1,22 @@
+{
+  "name": "aulatunes-ycwdyb-server",
+  "version": "0.1.0",
+  "private": true,
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "server": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://aula-education-ycwdyb@git.codesubmit.io/aula-education/aulatunes-ycwdyb"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "node-fetch": "^2.6.1",
+    "zustand": "^3.1.4"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  }
+}
