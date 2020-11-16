@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Loading renders correctly 1`] = `
+<section
+  className="container blur"
+>
+  <h1>
+    Loading...
+  </h1>
+</section>
+`;

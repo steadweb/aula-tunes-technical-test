@@ -1,0 +1,13 @@
+.container.blur .album-container .album {
+  filter: blur(4px);
+  -webkit-filter: blur(4px);
+}
+
+.album-container .album {
+  cursor: pointer;
+}
+
+.album-container .album:hover {
+  opacity: 0.4;
+  transition: opacity 0.3s;
+}

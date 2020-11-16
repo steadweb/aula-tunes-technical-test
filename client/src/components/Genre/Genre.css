@@ -1,0 +1,30 @@
+.selected-genre {
+  padding: 20px;
+  border: 1px solid var(--secondary-color);
+}
+
+.genre-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px auto;
+}
+
+.pill {
+  border: 1px solid var(--secondary-color);
+  background-color: var(--secondary-color);
+  color: black;
+  padding: 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.pill:hover {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+.pill::after {
+  content: '\2716';
+  margin: 6px;
+}

@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Album renders correctly 1`] = `
+<div
+  className="album"
+  onClick={[Function]}
+>
+  <img
+    alt="Album Cover"
+    src="/path/to/image"
+  />
+</div>
+`;

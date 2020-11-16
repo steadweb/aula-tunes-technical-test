@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Modal renders correctly 1`] = `
+Array [
+  <div
+    className="modal"
+    style={
+      Object {
+        "display": "none",
+      }
+    }
+  >
+    <div
+      className="modal__image"
+    >
+      <img
+        alt="Album Cover"
+      />
+    </div>
+    <div
+      className="modal__content"
+    >
+      <h2 />
+      <h3>
+         (
+        )
+      </h3>
+      <p />
+      <p
+        className="copyright"
+      />
+    </div>
+  </div>,
+  <div
+    className="modal__overlay"
+    style={
+      Object {
+        "display": "none",
+      }
+    }
+  />,
+]
+`;

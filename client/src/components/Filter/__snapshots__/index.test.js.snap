@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Filter renders correctly 1`] = `
+<div
+  className="filter"
+>
+  <select
+    onChange={[Function]}
+  >
+    <option
+      value="top-albums"
+    >
+      Top Albums
+    </option>
+    <option
+      value="top-songs"
+    >
+      Top Songs
+    </option>
+    <option
+      value="hot-tracks"
+    >
+      Hot Tracks
+    </option>
+    <option
+      value="new-releases"
+    >
+      New Release
+    </option>
+    <option
+      value="coming-soon"
+    >
+      Coming Soon
+    </option>
+  </select>
+</div>
+`;
