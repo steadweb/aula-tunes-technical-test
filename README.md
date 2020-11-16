@@ -1,45 +1,60 @@
-### Objective
+# Alua Tunes - Technical Task
 
-Aula Education is branching into the music business and needs a new website. Build it using JavaScript and React.
+Submission of a technical task for Alua Tunes. The following is required to get started:
 
-### Brief
+- Node 12.x
+- NPM 6.x
 
-In a fictional world, Aula Education is branching into the music business and we need a new a website. This website needs to display the top 100 songs based on the iTunes API. This code challenge allows you to choose your own path and lets you flaunt your creative panache and technical skills along the way.
+## Quick Start
 
-In order to help you fit the test in around other commitments, there's no time limit for the test. However, please don't feel the need to spend more than 2-3 hours total working on your solution.
+Run the following commands to run this application. Everything runs in memory, and doesn't need anything for permanent storage.
 
-### Tasks
+```
+npm i
+npm run dev
+```
 
--   Implement assignment using:
-    -   Language: **JavaScript**
-    -   Framework: **React**
--   Show top 100 albums based on the json feed here: `https://rss.itunes.apple.com/api/v1/us/apple-music/top-albums/all/100/non-explicit.json`
--   Allow the user to select the feed type from `top-albums`, `top-songs`, `hot-tracks` and `new-releases`, `coming-soon` - see [here](http://rss.itunes.apple.com/en-gb) for the correct url format
--   A simple design (bonus points for responsive design but this is not essential)
--   A good user experience
--   Allow the top 100 to be searchable
--   Provide tests for your application
--   Surprise us! Add a feature that you think would work well here (for instance, advanced search, integration with another API, a "Favorite" functionality)
-    -   Describe the feature in a separate markdown file
+## Features
 
-### Deliverables
+The following features have been included:
 
-Make sure to include all source code in the repository. To make reviewing easier, include a fully built version of your assignment in a folder named **public**.
+- Ability to filter by RSS `top-albums`, `top-songs`, `hot-tracks`, `new-releases` and `coming-soon`
+- Search functionality which filters based on the artistName or the name of the album
+- Advanced filtering of genre when clicking on a single album (powered by search and filtering as well)
+- Responsive design including blurring of background when selected album is in focus
+- Hard caching in play, locally, rather than on the server
 
-### Evaluation Criteria
+## Technical Decisions
 
--   **JavaScript** best practices
--   We're looking for you to produce working code, with enough room to demonstrate how to structure components in a small program.
--   Show us your work through your commit history
--   Completeness: did you complete the features?
--   Correctness: does the functionality act in sensible, thought-out ways?
--   Maintainability: is it written in a clean, maintainable way?
--   Testing: is the system adequately tested?
+The following decisions were made early on, to aid development:
 
-### CodeSubmit
+- Use Create React App for speed of delivery
+- Split client and server up as the RSS link provided is protected by CORS
+- `server/` is just a proxy to the RSS feed using `express`
+- `client/` contains the CRA which houses 99% of the application
+- Tests are written in Jest. Snapshots used for basic component rendering and unit tests included for service and helpers
+- Simplity is the aim, so CSS, HTML and JS are all that's included, along with CRA standards. No SCSS, styled-jsx, or state handling (i.e. redux) introduced.
+- Component state leveraged (via hooks) to contain search, filter and genre selection
 
-Please organize, design, test and document your code as if it were going into production - then push your changes to the master branch. After you have pushed your code, you may submit the assignment on the assignment page.
+## Known Issues
 
-All the best and happy coding,
+- Search doesn't work for singles
+- Tests(s) missing for server, although this is a lightweight proxy
 
-The Aula Education Team
+## Better Enhancements
+
+Given more time was spent on this, I'd enhance the following:
+
+- Users could choose more genres rather than having one
+- More powerful search that just looking at name and albumName
+- Better handling of cache, having the ability to bust the cache, or expire within a certain time period
+- Actually test the components, using react testing library
+
+## Tests
+
+Run the following commands to run the tests within `client`.
+
+```
+cd client
+npm test
+```
