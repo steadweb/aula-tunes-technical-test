@@ -1,7 +1,10 @@
 const fetch = require('node-fetch');
 const express = require('express');
+const cors = require('cors');
 const app = express();
 const port = 3100;
+
+app.use(cors());
 
 app.get('/api/:type', async (req, res) => {
   const results = await fetch(
