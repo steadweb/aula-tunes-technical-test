@@ -1,6 +1,12 @@
 # Aula Tunes - Technical Task
 
-Submission of a technical task for Aula Tunes. The following is required to get started:
+Submission of a technical task for Aula Tunes.
+
+![Aula Tunes Technical Task](aula.png 'Aula Tunes Technical Task')
+
+## Prerequisites
+
+The following is required to get started
 
 - Node 12.x
 - NPM 6.x
@@ -25,6 +31,8 @@ Both `docker` and `docker-compose` are optional, but allow you to run this appli
 ```
 docker-compose up -d --build
 ```
+
+Once the `server` and `client` are built and served, you should be able to access `http://localhost:3000`.
 
 ## Features
 
@@ -61,10 +69,11 @@ The following decisions were made early on, to aid development:
 
 Given more time was spent on this, I'd enhance the following:
 
+- Better UX around closing modal (at the moment, click the overlay outside of the modal)
 - Users could choose more genres rather than having one
 - More powerful search that just looking at name and albumName
 - Better handling of cache, having the ability to bust the cache, or expire within a certain time period
-- Actually test the components, using react testing library
+- Actually test the components, using react testing library, and not just provide snapshots
 - Use docker ~~to contain both client and server~~ to demonstrate a production deployment strategy
 
 ## Tests
